@@ -14,7 +14,17 @@
 
     <name>RedBeardCodes Parent</name>
     <description>Shared Maven configuration for RedBeardCodes projects.</description>
-    <url>https://github.com/RedBeardCodes</url>
+    <url>https://github.com/RedBeardCodes/redbeardcodes-parent</url>
+
+    <developers>
+        <developer>
+            <id>redbeardcodes</id>
+            <name>Jeff Rogers</name>
+            <email>redbeardcodes@gmail.com</email>
+            <organization>RedBeardCodes</organization>
+            <organizationUrl>https://github.com/RedBeardCodes</organizationUrl>
+        </developer>
+    </developers>
 
     <licenses>
         <license>
@@ -45,6 +55,43 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.16.0</version>
                 </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.6.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <version>3.6.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.5.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.5.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>3.5.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>3.2.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>3.2.0</version>
+                </plugin>
+                <!--
+                -->
             </plugins>
         </pluginManagement>
     </build>
